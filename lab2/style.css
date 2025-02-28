@@ -1,0 +1,375 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffcc00;
+    color: #ff0000;
+    line-height: 1.6;
+    animation: bgColorChange 5s infinite;
+}
+
+@keyframes bgColorChange {
+    0% { background: #ffcc00; }
+    50% { background: #ff00ff; }
+    100% { background: #ffcc00; }
+}
+
+header, main, aside, footer {
+    padding: 20px;
+}
+
+header {
+    background: #ff0000;
+    text-align: center;
+    padding: 40px 20px;
+    animation: headerFlash 1s infinite;
+}
+
+@keyframes headerFlash {
+    0% { background: #ff0000; }
+    50% { background: #00ff00; }
+    100% { background: #ff0000; }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffff00;
+    text-shadow: 3px 3px 0 #0000ff;
+    animation: textBounce 2s infinite;
+}
+
+@keyframes textBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+header p {
+    font-size: 2em;
+    margin: 10px 0 0;
+    color: #00ffff;
+    animation: textRotate 3s infinite;
+}
+
+@keyframes textRotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.reasons {
+    background: #00ff00;
+    margin: 20px 0;
+    padding: 20px;
+    border: 5px dashed #0000ff;
+    animation: borderFlash 2s infinite;
+}
+
+@keyframes borderFlash {
+    0% { border-color: #0000ff; }
+    50% { border-color: #ff00ff; }
+    100% { border-color: #0000ff; }
+}
+
+.reasons h2 {
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 2px 2px 0 #ffff00;
+}
+
+.reasons ol {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons li {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #0000ff;
+    padding: 10px;
+    background: #ffff00;
+    border-radius: 10px;
+    animation: listItemShake 1s infinite;
+}
+
+@keyframes listItemShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.slogans {
+    background: #ff00ff;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    animation: slogansFlash 1s infinite;
+}
+
+@keyframes slogansFlash {
+    0% { background: #ff00ff; }
+    50% { background: #00ffff; }
+    100% { background: #ff00ff; }
+}
+
+.slogans h2 {
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffff00;
+    text-shadow: 2px 2px 0 #0000ff;
+}
+
+.slogan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.slogan-grid p {
+    background: #0000ff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #ffff00;
+    animation: sloganSpin 2s infinite;
+}
+
+@keyframes sloganSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.reviews {
+    background: #00ffff;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    animation: reviewsFlash 1s infinite;
+}
+
+@keyframes reviewsFlash {
+    0% { background: #00ffff; }
+    50% { background: #ff00ff; }
+    100% { background: #00ffff; }
+}
+
+.reviews h2 {
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px 0 #ffff00;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.review {
+    background: #ffff00;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    animation: reviewBounce 1s infinite;
+}
+
+@keyframes reviewBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.review p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #0000ff;
+}
+
+.review span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: right;
+    color: #ff0000;
+}
+
+.ads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.ads img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: adShake 1s infinite;
+}
+
+@keyframes adShake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+footer {
+    background: #0000ff;
+    color: #ffff00;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    animation: footerFlash 1s infinite;
+}
+
+@keyframes footerFlash {
+    0% { background: #0000ff; }
+    50% { background: #ff0000; }
+    100% { background: #0000ff; }
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5em;
+    animation: footerTextSpin 2s infinite;
+}
+
+@keyframes footerTextSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff0000;
+    color: #ffff00;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: buttonFlash 1s infinite;
+}
+
+@keyframes buttonFlash {
+    0% { background: #ff0000; }
+    50% { background: #00ff00; }
+    100% { background: #ff0000; }
+}
+
+#scrollToTopBtn:hover {
+    background: #00ffff;
+    transform: scale(1.1);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff0000;
+    color: #ffff00;
+    padding: 20px;
+    border: 5px solid #0000ff;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    animation: popupShake 0.5s infinite;
+}
+
+@keyframes popupShake {
+    0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+    25% { transform: translate(-50%, -50%) rotate(5deg); }
+    75% { transform: translate(-50%, -50%) rotate(-5deg); }
+}
+
+.popup button {
+    background: #0000ff;
+    color: #ffff00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.popup button:hover {
+    background: #00ffff;
+}
+
+
+@media (max-width: 480px) {
+    header, main, aside, footer {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        text-shadow: 2px 2px 0 #0000ff;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .reasons, .slogans, .reviews {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .reasons h2, .slogans h2, .reviews h2 {
+        font-size: 1.5em;
+    }
+
+    .reasons li, .slogan-grid p, .review p {
+        font-size: 1em;
+    }
+
+    .slogan-grid, .review-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 5px;
+    }
+
+    .ads img {
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    #scrollToTopBtn {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .popup {
+        padding: 10px;
+        border: 3px solid #0000ff;
+    }
+
+    .popup button {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+}
