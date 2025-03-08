@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КУПИ НАУШНИКИ!!!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="23.css" />
+    <script defer src="23.js"></script>
     
 </head>
 <body>
@@ -53,11 +54,14 @@
                 </div>
             </div>
         </section>
+        <div id="popup1" class="popup">
+            <p>ЭЙ, ТЫ! КУПИ НАУШНИКИ ПРЯМО СЕЙЧАС!</p>
+            <button onclick="document.getElementById('popup1').style.display = 'none';">Закрыть</button>
+        </div>
+        <aside class="ads">
+            <img src="i.webp" alt="Наушники 1">
+        </aside>
     </main>
-
-    <aside class="ads">
-        <img src="i.webp" alt="Наушники 1">
-    </aside>
 
     <footer>
         <p>© 2025 КУПИ НАУШНИКИ!!! ВСЕ ПРАВА ЗАЩИЩЕНЫ. КУПИ, ПОКА НЕ ПОЗДНО!</p>
@@ -67,34 +71,5 @@
     <button id="scrollToTopBtn" title="Наверх">↑</button>
 
     
-    <div id="popup1" class="popup">
-        <p>ЭЙ, ТЫ! КУПИ НАУШНИКИ ПРЯМО СЕЙЧАС!</p>
-        <button onclick="document.getElementById('popup1').style.display = 'none';">Закрыть</button>
-    </div>
-
-    <script>
-        // Скрипт для кнопки "Наверх"
-        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
-            }
-        };
-
-        scrollToTopBtn.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-
-        // Скрипт для всплывающего окна
-        setTimeout(() => {
-            document.getElementById('popup1').style.display = 'block';
-        }, 5000); 
-    </script>
-</body>
+    </body>
 </html>

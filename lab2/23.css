@@ -237,12 +237,7 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.5em;
-    animation: footerTextSpin 2s infinite;
-}
-
-@keyframes footerTextSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    /* Убрана анимация вращения */
 }
 
 #scrollToTopBtn {
@@ -309,7 +304,6 @@ footer p {
 .popup button:hover {
     background: #00ffff;
 }
-
 
 @media (max-width: 480px) {
     header, main, aside, footer {
