@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КУПИ НАУШНИКИ!!!</title>
-    <link rel="stylesheet" href="index.css" />
-    <script defer src="index.js"></script>
-    
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/index.js"></script>
 </head>
 <body>
+    <button id="themeToggleBtn">🌙</button>
     <header>
         <h1>ЧУДО НАУШНИКИ!!!</h1>
         <p>ТЫ НЕ СМОЖЕШЬ ЖИТЬ БЕЗ НИХ!!!</p>
@@ -39,27 +39,36 @@
 
         <section class="reviews">
             <h2>ОТЗЫВЫ НАШИХ ПОКУПАТЕЛЕЙ:</h2>
-            <div class="review-grid">
+            <div class="review-grid" id="reviewGrid">
                 <div class="review">
                     <p>"ЭТИ НАУШНИКИ ИЗМЕНИЛИ МОЮ ЖИЗНЬ! ТЕПЕРЬ Я МОГУ СЛУШАТЬ МУЗЫКУ ДАЖЕ В ДУШЕ!"</p>
                     <span>- Егор Колганов</span>
+                    <button class="delete-btn" data-index="0">Удалить</button>
                 </div>
                 <div class="review">
                     <p>"Я КУПИЛ ИХ, И ТЕПЕРЬ ВСЕ ДЕВУШКИ ХОТЯТ СО МНОЙ ПОЗНАКОМИТЬСЯ!"</p>
                     <span>- Эрик Сарксян</span>
+                    <button class="delete-btn" data-index="1">Удалить</button>
                 </div>
                 <div class="review">
                     <p>"ЛУЧШЕЕ, ЧТО СЛУЧАЛОСЬ СО МНОЙ ПОСЛЕ ИЗОБРЕТЕНИЯ КОЛЕСА!"</p>
                     <span>- Мария Ковалева</span>
+                    <button class="delete-btn" data-index="2">Удалить</button>
                 </div>
-            </div>
+                </div>
+            <form id="reviewForm">
+                <input type="text" id="reviewName" placeholder="Ваше имя" required>
+                <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+                <button type="submit">Добавить отзыв</button>
+            </form>
         </section>
+
         <div id="popup1" class="popup">
             <p>ЭЙ, ТЫ! КУПИ НАУШНИКИ ПРЯМО СЕЙЧАС!</p>
             <button onclick="document.getElementById('popup1').style.display = 'none';">Закрыть</button>
         </div>
         <aside class="ads">
-            <img src="i.webp" alt="Наушники 1">
+            <img src="image/i.webp" alt="Наушники 1">
         </aside>
     </main>
 
@@ -67,9 +76,6 @@
         <p>© 2025 КУПИ НАУШНИКИ!!! ВСЕ ПРАВА ЗАЩИЩЕНЫ. КУПИ, ПОКА НЕ ПОЗДНО!</p>
     </footer>
 
-   
     <button id="scrollToTopBtn" title="Наверх">↑</button>
-
-    
-    </body>
+</body>
 </html>
