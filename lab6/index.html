@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артемий Лебедев</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Сайт об Артемии Лебедеве</h1>
+        <div class="header-controls">
+            <button id="toggle-edit-mode">Режим редактирования</button>
+            <button id="add-block" style="display: none;">Добавить блок</button>
+            <div class="api-buttons">
+                <button class="api-button" data-api="random-user">
+                    <span class="icon">👤</span> Случайный пользователь
+                </button>
+                <button class="api-button" data-api="joke">
+                    <span class="icon">😂</span> Случайная шутка
+                </button>
+                <button class="api-button" data-api="quote">
+                    <span class="icon">💬</span> Случайная цитата
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="app"></div>
+    
+    <!-- Модальное окно для добавления блока -->
+    <div id="add-block-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить новый блок</h2>
+            <select id="block-type">
+                <option value="text">Текстовый блок</option>
+                <option value="image">Блок с изображением</option>
+                <option value="link">Блок с ссылкой</option>
+            </select>
+            <input type="text" id="block-data" placeholder="Введите данные...">
+            <button id="confirm-add-block">Добавить</button>
+        </div>
+    </div>
+    
+    <!-- Индикатор загрузки -->
+    <div id="loading">
+        <div class="loader"></div>
+        <p>Загрузка данных...</p>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
