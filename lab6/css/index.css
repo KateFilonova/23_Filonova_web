@@ -62,7 +62,7 @@ button {
     padding: 10px 20px;
     font-size: 1em;
     color: #ffffff;
-    background: linear-gradient(135deg, #00b4db, #0083b0);
+    background: linear-gradient(135deg, #00b4db, #2575fc);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #0083b0, #00b4db);
+    background: linear-gradient(135deg, #2575fc, #00b4db);
     transform: translateY(-2px);
 }
 
@@ -171,7 +171,7 @@ button:hover {
     outline: none;
 }
 
-/* API Block Styles */
+
 .api-block {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -243,7 +243,6 @@ button:hover {
     font-style: italic;
 }
 
-/* Loading Indicator */
 #loading {
     position: fixed;
     top: 0;
@@ -279,12 +278,12 @@ button:hover {
     to { transform: rotate(360deg); }
 }
 
-/* API Buttons in Header */
+
 .api-button {
     padding: 10px 20px;
     font-size: 1em;
     color: #ffffff;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(135deg, #00b4db 0%, #2575fc 100%);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -294,7 +293,7 @@ button:hover {
 }
 
 .api-button:hover {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    background: linear-gradient(135deg, #2575fc 0%, #00b4db 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -303,7 +302,6 @@ button:hover {
     transform: translateY(1px);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .api-block {
         padding: 15px;

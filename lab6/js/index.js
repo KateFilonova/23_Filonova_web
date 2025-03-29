@@ -233,7 +233,7 @@ function renderPage(blocks) {
 }
 
 renderPage([hero, info, achievements, hobbies, personalLife, contact, button]);
-// Add these methods to your existing code
+
 async function fetchRandomUser() {
     showLoading(true);
     try {
@@ -279,25 +279,25 @@ async function fetchQuote() {
     }
 }
 
-// Helper function to add info blocks
+
 function addInfoBlock(title, content) {
     const newBlock = new InfoBlock(title, content);
     const app = document.getElementById("app");
     app.appendChild(createBlockElement(newBlock));
     
-    // If you're maintaining a blocks array somewhere
+  
     if (typeof blocks !== 'undefined') {
         blocks.push(newBlock);
         saveToLocalStorage();
     }
 }
 
-// Modify your setupEventListeners function to include API buttons
+
 function setupEventListeners() {
     document.getElementById("toggle-edit-mode").addEventListener("click", toggleEditMode);
     document.getElementById("add-block").addEventListener("click", addNewBlock);
     
-    // Add API buttons to your header
+
     const header = document.querySelector("header");
     header.innerHTML += `
         <button class="api-button" data-api="random-user">Get Random User</button>
@@ -305,7 +305,7 @@ function setupEventListeners() {
         <button class="api-button" data-api="quote">Get Quote</button>
     `;
     
-    // Add event listeners for API buttons
+
     document.querySelectorAll('.api-button').forEach(item => {
         item.addEventListener('click', () => {
             const apiType = item.dataset.api;
@@ -316,7 +316,7 @@ function setupEventListeners() {
     });
 }
 
-// Add loading indicator function
+
 function showLoading(show) {
     let loading = document.getElementById("loading");
     if (!loading) {
